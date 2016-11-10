@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Holy Grail</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- External link (relative) to your main stylesheet -->
+        <style type="text/css">
+		.wrap {
+			display: flex;
+			flex-flow: row wrap;
+		}
+		.header, .main, .nav, .aside, .footer {
+			flex: 1 100%;
+		}
+		.header, .footer {
+            background: #A4DEBF;
+            color: #5c5c52;
+            margin: .5em 0 .5em 0;
+			font-size: 24px;
+        }
+		@media all and (min-width: 600px) {
+		.aside { flex: 1 auto; }
+		}
+
+		@media all and (min-width: 800px) {
+			.main { 
+			flex: 3 80px;
+			padding: 30px;
+			}
+			.aside-1 { order: 1; }
+			.main    { order: 2; }
+			.aside-2 { order: 3; }
+			.footer  { order: 4; }
+			}
+			
+		.aside-1, .aside-2{
+			background: #E6E6FA
+		}
+		
+		.main {
+			background: #D8BFD8;
+		}
+  
+        </style>
+
+        <!-- External link (relative) to your javascript file -->
+        <script src="js/index.js"></script>
+    </head>
+	<div class="wrap">
+		<header class="header">HEADER</header>
+		<article class="main">
+			<p>Lnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+		<aside class="aside aside-1">left sidebar</aside>
+		<aside class="aside aside-2">right sidebar</aside>
+		<footer class="footer">PAGE FOOTER</footer>
+	</div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+

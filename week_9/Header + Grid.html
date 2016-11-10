@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Header + Grid</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- External link (relative) to your main stylesheet -->
+        <style type="text/css">
+		
+        body {
+          background: #fff;
+          margin: 0;
+		  flex-direction: column;
+        }
+        .flex-container {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+	
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			
+			-webkit-flex-flow: row wrap;
+			justify-content: space-around;
+		}
+			
+        .header {
+            background: #A4DEBF;
+            color: #5c5c52;
+            margin: .5em 0 .5em 0;
+			font-size: 24px;
+        }
+        .flex-item {
+			background: #D8BFD8;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+			margin-top: 20px;
+			
+			line-height: 150px;
+			color: white;
+			font-weight: bold;
+			font-size: 3em;
+			text-align: center;
+			}
+			
+        </style>
+
+        <!-- External link (relative) to your javascript file -->
+        <script src="js/index.js"></script>
+    </head>
+    <body class="basic">
+      <div class="container">
+        <header class="header">HEADER</header>
+        <div class="row1">
+			<ul class="flex-container">
+			<li class="flex-item">1</li>
+			<li class="flex-item">2</li>
+			<li class="flex-item">3</li>
+			<li class="flex-item">4</li>
+			<li class="flex-item">5</li>
+			<li class="flex-item">6</li>
+			<li class="flex-item">7</li>
+			<li class="flex-item">8</li>
+			<li class="flex-item">9</li>
+			<li class="flex-item">10</li>
+			<li class="flex-item">11</li>
+			<li class="flex-item">12</li>
+		</ul>
+      </div>
+    </body>
+</html>
