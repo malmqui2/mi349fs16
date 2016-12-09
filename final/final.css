@@ -28,17 +28,14 @@ body {
 	list-style-position: inside;
 }
 
-#nav {
+.nav {
 	list-style-type: none;
 	text-align: center;
-	margin-top: 15px;
-	margin-bottom: 15px;
 	padding: 7px;
-	background-image: url(greybg.png);	
-	background-color: #600048;
+	background-color: #333;
 }
 
-#nav li {
+.nav li {
 	display: inline;
   	list-style-type: none;
 	text-align: center;
@@ -52,7 +49,7 @@ body {
 }
 
 
-#nav a:hover {
+.nav a:hover {
 	text-decoration: none;
 	padding-top: 2px;
 	padding-bottom: 2px;
@@ -114,9 +111,8 @@ a:active {
   opacity:0;
 }
 
-#footer {
-	background-image: url(greybg.png);	
-	background-color: #600048;
+#footer {	
+	background-color: #333;
 	padding: 10px;
 	margin-bottom: -5px;
 	font-size: small;
@@ -175,6 +171,9 @@ margin: 0;
     max-height:100%
 }
 
-@media all and (max-width: 660px) {
-	
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .nav-item:hover .nav-submenu {
+    display:none;
+  }
 }
+
